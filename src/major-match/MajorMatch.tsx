@@ -397,12 +397,11 @@ export function MajorMatch() {
           <div className={styles.profileIntro}>
             <span>RECENT COHORTS · POOLED</span>
             <h3>Pathways across academic profiles</h3>
-            <p>Instead of publishing GPA thresholds, these layers describe the approximate share represented by each pooled profile group across 2024–2026 records.</p>
           </div>
           <div className={styles.profileRows}>
             <article><span>TOP ~17%</span><div><h4>PhD and elite Master’s routes</h4><p><b>PhD:</b> Yale, Chicago, Duke, Johns Hopkins, UNC, Emory, Washington, Minnesota, SMU and CUHK(SZ).</p><p><b>Master’s:</b> Berkeley, Cornell, Northwestern, Michigan, UCL, NUS, HKU and CUHK.</p></div></article>
-            <article><span>NEXT ~24%</span><div><h4>US Top 30, Hong Kong and Singapore</h4><p>Berkeley, Chicago, Columbia, Cornell, Michigan, UPenn, Duke, UCLA, UCSD, UBC, NUS, HKU, CUHK, CUHK(SZ), CEMFI and Amsterdam; also PhD at CUHK(SZ).</p></div></article>
-            <article><span>MIDDLE ~21%</span><div><h4>Competitive Master’s and industry</h4><p>Berkeley, Brown, Columbia, Cornell, UCLA, Washington, CMU, JHU, NYU, USC, NUS, NTU, HKU, HKUST, CUHK and CUHK(SZ) — including PhD at CUHK(SZ) — alongside data-engineering and industry offers.</p></div></article>
+            <article><span>NEXT ~24%</span><div><h4>US Top 30, Hong Kong and Singapore</h4><p><b>PhD:</b> CUHK(SZ).</p><p><b>Master’s:</b> Berkeley, Chicago, Columbia, Cornell, Michigan, UPenn, Duke, UCLA, UCSD, UBC, NUS, HKU, CUHK, CUHK(SZ), CEMFI and Amsterdam.</p></div></article>
+            <article><span>MIDDLE ~21%</span><div><h4>Competitive Master’s and industry</h4><p><b>PhD:</b> CUHK(SZ).</p><p><b>Master’s:</b> Berkeley, Brown, Columbia, Cornell, UCLA, Washington, CMU, JHU, NYU, USC, NUS, NTU, HKU, HKUST, CUHK and CUHK(SZ), alongside data-engineering and industry offers.</p></div></article>
             <article><span>NEXT ~21%</span><div><h4>Solid pathways remain open</h4><p>Cornell, UCLA, Michigan, Emory, Georgetown, Washington, Edinburgh, ANU, Amsterdam, NTU, HKUST, CUHK, CUHK(SZ), PolyU and CityU, plus technology and professional-services offers.</p></div></article>
           </div>
           <p className={styles.profileNote}>Approximate shares are derived from pooled sizes of the four published academic-profile bands among 112 records; they are descriptive layers, not exact individual ranks. Destinations combine offers and recorded outcomes, are not exhaustive, and may overlap. The lowest original band is intentionally not displayed.</p>
