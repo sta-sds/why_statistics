@@ -1,7 +1,7 @@
-"use client";
-
 import { useEffect, useMemo, useRef, useState } from "react";
-import styles from "./major-match.module.css";
+import styles from "./MajorMatch.module.css";
+
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 
 type Choice = "S" | "D";
 
@@ -441,7 +441,7 @@ export function MajorMatch() {
           </div>
           <div className={styles.heroVisual} aria-label="Statistics and Data Science pull on opposite ends of a rope">
             <div className={styles.sunburst} />
-            <img src="./assets/major-match/tug-of-war-hero-v2.png" alt="Statistics fox and Data Science beaver pulling opposite ends of one rope" className={styles.heroDuel} />
+            <img src={asset("assets/major-match/tug-of-war-hero-v2.png")} alt="Statistics fox and Data Science beaver pulling opposite ends of one rope" className={styles.heroDuel} />
             <span className={styles.statFlag}>STATISTICS</span><span className={styles.dsFlag}>DATA SCIENCE</span>
           </div>
         </section>
@@ -466,9 +466,9 @@ export function MajorMatch() {
           <div className={styles.tug} aria-label={`Statistics ${sCount}, Data Science ${dCount}`}>
             <div className={styles.tugLabels}><span>STATISTICS · {sCount}</span><span>DATA SCIENCE · {dCount}</span></div>
             <div className={styles.tugField}>
-              <div className={`${styles.tugCharacter} ${styles.tugCharacterStat}`}><img src="./assets/major-match/tug-of-war-pair-ropefree.png" alt="" /></div>
+              <div className={`${styles.tugCharacter} ${styles.tugCharacterStat}`}><img src={asset("assets/major-match/tug-of-war-pair-ropefree.png")} alt="" /></div>
               <div className={styles.rope}><span style={{ left: `${50 + pull}%` }}><i /></span></div>
-              <div className={`${styles.tugCharacter} ${styles.tugCharacterDs}`}><img src="./assets/major-match/tug-of-war-pair-ropefree.png" alt="" /></div>
+              <div className={`${styles.tugCharacter} ${styles.tugCharacterDs}`}><img src={asset("assets/major-match/tug-of-war-pair-ropefree.png")} alt="" /></div>
             </div>
           </div>
           {round > 0 && <button className={styles.back} onClick={() => setRound((value) => value - 1)}>← Change previous answer</button>}
