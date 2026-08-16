@@ -256,9 +256,18 @@ export function MajorMatch() {
   return (
     <main className={styles.page}>
       <nav className={styles.nav} aria-label="Why Statistics navigation">
-        <a href="#play" className={styles.brand}>WHY STATISTICS</a>
+        <a href="#cover" className={styles.brand}>WHY STATISTICS</a>
         <div><a href="#difference">The difference</a><a href="#stories">Three ideas</a><a href="#pathways">Pathways</a><a href="#route">Find your route</a></div>
       </nav>
+
+      <section className={styles.cover} id="cover">
+        <div className={styles.coverInner}>
+          <p className={styles.coverKicker}>School of Data Science · CUHK Shenzhen</p>
+          <h1 className={styles.coverTitle}>Statistics major in the age of data science and AI</h1>
+          <p className={styles.coverAuthor}>The Statistics major team, CUHK Shenzhen</p>
+          <a className={styles.coverCta} href="#play">Begin <span>→</span></a>
+        </div>
+      </section>
 
       <section className={styles.playHero} id="play">
         <div className={styles.playCopy}>
