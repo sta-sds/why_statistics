@@ -255,8 +255,8 @@ export function MajorMatch() {
 
   return (
     <main className={styles.page}>
-      <nav className={styles.nav} aria-label="Major Match navigation">
-        <a href="#play" className={styles.brand}>MAJOR MATCH <span>2026</span></a>
+      <nav className={styles.nav} aria-label="Why Statistics navigation">
+        <a href="#play" className={styles.brand}>WHY STATISTICS</a>
         <div><a href="#difference">The difference</a><a href="#stories">Three ideas</a><a href="#pathways">Pathways</a><a href="#route">Find your route</a></div>
       </nav>
 
@@ -486,7 +486,14 @@ export function MajorMatch() {
         </section>
       )}
       </div>
-      <footer className={styles.footer}><span>School of Data Science · Major Match 2026</span><span className={styles.footerJoke}>Statisticians build products too — exhibit A: this website was made by one, not by a data scientist.</span><span>Built from programme discussion materials; no personal placement data shown.</span></footer>
+      <footer className={styles.footer}>
+        <span>School of Data Science · Why Statistics</span>
+        <span className={styles.footerJoke}>Statisticians build products too — this website was made by the Statistics major team.</span>
+        <span className={styles.footerCredit}>
+          <strong>Statistics major in the age of data science and AI</strong>
+          <em>The Statistics major team, CUHK Shenzhen</em>
+        </span>
+      </footer>
     </main>
   );
 }
