@@ -11,7 +11,7 @@ const NEWS = [
     date: "AUG 31 · MON",
     time: "13:30–15:50",
     title: "SDS Faculty Mini Lecture — Prof. Yao",
-    copy: "Experience the classroom through a short faculty mini lecture for incoming students.",
+    copy: "Experience the classroom through a short faculty mini lecture.",
     venue: "Conference Hall II",
   },
   {
@@ -243,7 +243,6 @@ export function MajorMatch() {
   const [showResult, setShowResult] = useState(false);
   const [galtonRun, setGaltonRun] = useState(0);
   const [galtonBalls, setGaltonBalls] = useState(250);
-  const [newsIndex, setNewsIndex] = useState(0);
 
   const sCount = answers.filter((answer) => answer === "S").length;
   const dCount = answers.length - sCount;
@@ -289,19 +288,19 @@ export function MajorMatch() {
         </div>
         <aside className={styles.newsDock} id="news" aria-label="Latest Statistics major news">
           <div className={styles.newsFlag}><span>NEWS</span></div>
-          <div className={styles.newsContent} aria-live="polite">
-            <div className={styles.newsMeta}>
-              <time dateTime={NEWS[newsIndex].dateTime}>{NEWS[newsIndex].date}</time>
-              <span>{NEWS[newsIndex].time}</span>
-              <span>{NEWS[newsIndex].venue}</span>
-            </div>
-            <h2>{NEWS[newsIndex].title}</h2>
-            <p>{NEWS[newsIndex].copy}</p>
-          </div>
-          <div className={styles.newsControls}>
-            <span>{String(newsIndex + 1).padStart(2, "0")} / {String(NEWS.length).padStart(2, "0")}</span>
-            <button type="button" aria-label="Previous news item" onClick={() => setNewsIndex((newsIndex - 1 + NEWS.length) % NEWS.length)}>←</button>
-            <button type="button" aria-label="Next news item" onClick={() => setNewsIndex((newsIndex + 1) % NEWS.length)}>→</button>
+          <div className={styles.newsItems}>
+            {NEWS.map((item, index) => (
+              <article className={`${styles.newsContent} ${index === 1 ? styles.newsFeatured : styles.newsSecondary}`} key={`${item.dateTime}-${item.title}`}>
+                {index === 1 && <span className={styles.newsPriority}>FEATURED TALK</span>}
+                <div className={styles.newsMeta}>
+                  <time dateTime={item.dateTime}>{item.date}</time>
+                  <span>{item.time}</span>
+                  <span>{item.venue}</span>
+                </div>
+                <h2>{item.title}</h2>
+                <p>{item.copy}</p>
+              </article>
+            ))}
           </div>
         </aside>
       </section>
