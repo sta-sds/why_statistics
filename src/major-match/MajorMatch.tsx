@@ -5,6 +5,25 @@ const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//
 
 type Choice = "S" | "D";
 
+const NEWS = [
+  {
+    dateTime: "2026-08-31T13:30:00+08:00",
+    date: "AUG 31 · MON",
+    time: "13:30–15:50",
+    title: "SDS Faculty Mini Lecture — Prof. Yao",
+    copy: "Experience the classroom through a short faculty mini lecture for incoming students.",
+    venue: "Conference Hall II",
+  },
+  {
+    dateTime: "2026-08-31T16:00:00+08:00",
+    date: "AUG 31 · MON",
+    time: "16:00–17:00",
+    title: "Dialogue with a Master — Professor C. F. Jeff Wu",
+    copy: "A special one-hour dialogue with Professor C. F. Jeff Wu.",
+    venue: "Conference Hall II",
+  },
+] as const;
+
 const ROUNDS: Array<{
   chapter: string;
   question: string;
@@ -224,6 +243,7 @@ export function MajorMatch() {
   const [showResult, setShowResult] = useState(false);
   const [galtonRun, setGaltonRun] = useState(0);
   const [galtonBalls, setGaltonBalls] = useState(250);
+  const [newsIndex, setNewsIndex] = useState(0);
 
   const sCount = answers.filter((answer) => answer === "S").length;
   const dCount = answers.length - sCount;
@@ -257,7 +277,7 @@ export function MajorMatch() {
     <main className={styles.page}>
       <nav className={styles.nav} aria-label="Why Statistics navigation">
         <a href="#cover" className={styles.brand}>WHY STATISTICS</a>
-        <div><a href="#difference">The difference</a><a href="#stories">Three ideas</a><a href="#pathways">Pathways</a><a href="#route">Find your route</a></div>
+        <div><a href="#news">News</a><a href="#difference">The difference</a><a href="#stories">Three ideas</a><a href="#pathways">Pathways</a><a href="#route">Find your route</a></div>
       </nav>
 
       <section className={styles.cover} id="cover">
@@ -267,6 +287,23 @@ export function MajorMatch() {
           <p className={styles.coverAuthor}>The Statistics major team, CUHK Shenzhen</p>
           <a className={styles.coverCta} href="#play">Begin <span>→</span></a>
         </div>
+        <aside className={styles.newsDock} id="news" aria-label="Latest Statistics major news">
+          <div className={styles.newsFlag}><span>NEWS</span></div>
+          <div className={styles.newsContent} aria-live="polite">
+            <div className={styles.newsMeta}>
+              <time dateTime={NEWS[newsIndex].dateTime}>{NEWS[newsIndex].date}</time>
+              <span>{NEWS[newsIndex].time}</span>
+              <span>{NEWS[newsIndex].venue}</span>
+            </div>
+            <h2>{NEWS[newsIndex].title}</h2>
+            <p>{NEWS[newsIndex].copy}</p>
+          </div>
+          <div className={styles.newsControls}>
+            <span>{String(newsIndex + 1).padStart(2, "0")} / {String(NEWS.length).padStart(2, "0")}</span>
+            <button type="button" aria-label="Previous news item" onClick={() => setNewsIndex((newsIndex - 1 + NEWS.length) % NEWS.length)}>←</button>
+            <button type="button" aria-label="Next news item" onClick={() => setNewsIndex((newsIndex + 1) % NEWS.length)}>→</button>
+          </div>
+        </aside>
       </section>
 
       <section className={styles.playHero} id="play">
