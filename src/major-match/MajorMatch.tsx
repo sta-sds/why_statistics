@@ -21,6 +21,7 @@ const ZH: Record<string, string> = {
   "2026–27 STUDY SCHEME": "2026–27 培养方案", "Build the common core. Then choose the evidence you want to understand.": "先掌握共同核心，再选择你想理解的证据类型。", "in the major programme: 23 School Package + 18 Required + 30 Elective. Every student takes three courses in one stream for depth; four courses qualify for declaring that stream.": "主修课程共计：23 学分学院课程 + 18 学分必修课 + 30 学分选修课。每位学生须在一个方向修读三门课以满足深度要求；修满四门可申报该专修方向。", "Mathematical Statistics": "数理统计", "Probability theory, stochastic processes, advanced inference and the mathematical foundations beneath them.": "概率论、随机过程、高等统计推断及其数学基础。", "Statistical Methodology": "统计方法", "Linear and generalised models, experiments, Bayesian methods, survival, time series and causality.": "线性与广义线性模型、实验设计、贝叶斯方法、生存分析、时间序列与因果推断。", "Biostatistics & Bioinformatics": "生物统计与生物信息学", "Health outcomes, genomes, categorical and survival data, plus biomedical machine learning.": "健康结局、基因组、范畴与生存数据，以及生物医学机器学习。", "Financial Statistics": "金融统计", "Time-dependent markets, stochastic calculus, risk, derivatives and financial modelling.": "时间依赖的市场、随机微积分、风险、衍生品与金融建模。", "Computing & Machine Learning": "计算与机器学习", "Algorithms, data structures, machine learning, deep learning and a capstone project.": "算法、数据结构、机器学习、深度学习与毕业设计。", "Course titles and requirements follow the Statistics Study Scheme applicable to students admitted in 2026–27 and thereafter, last updated 20 July 2026.": "课程名称与要求依据适用于 2026–27 学年及以后入学学生的统计学培养方案（2026 年 7 月 20 日更新）。",
   "CUHK-SZ STATISTICS MAJOR · RECENT COHORT SIGNALS": "香港中文大学（深圳）统计学专业 · 近年学生数据", "Statistics has supported strong progression into advanced study.": "统计学专业为继续深造提供了扎实路径。", "The pattern is more useful than a GPA lookup table: across three recent cohorts, most recorded students pursued further study, with a meaningful share reaching PhD pathways.": "比简单的 GPA 对照表更重要的是整体趋势：近三届有记录的学生中，多数选择继续深造，也有相当一部分进入博士路径。", "Further study": "继续深造", "share of students with records": "占有记录学生的比例", "PhD destinations / offers": "博士去向 / 录取", "share with at least one PhD pathway": "至少获得一条博士路径的比例", "Cohort record counts: 41 (2024), 32 (2025), and 44 (2026). *2026 figures reflect offers received as of August 2026 and are still updating; they are not necessarily final destinations. Students holding both study and employment offers may appear in both pathway categories.": "各届记录数：2024 届 41 人、2025 届 32 人、2026 届 44 人。*2026 数据统计截至 2026 年 8 月，仍在更新，未必是最终去向；同时持有升学与就业录取的学生可能出现在多个类别中。",
   "WHERE CAN STATISTICS TAKE YOU?": "统计学可以带你走向哪里？", "Specialised paths — without closing the door to data careers.": "走向专业化，同时不关闭数据职业的大门。", "Graduate study": "继续深造", "Statistics, Biostatistics, Data Science, Operations Research, Finance, Public Health and related programmes.": "统计学、生物统计、数据科学、运筹学、金融、公共卫生及相关项目。", "Evidence-intensive work": "重视证据的专业工作", "Clinical trials, experimental design, risk, actuarial work, quantitative research and policy evaluation.": "临床试验、实验设计、风险与精算、量化研究和政策评估。", "Modern data roles": "现代数据岗位", "Inference-focused data science, experimentation, product analytics, research engineering and AI evaluation.": "重视推断的数据科学、实验平台、产品分析、研究工程与 AI 评估。", "RECENT COHORTS · POOLED": "近年学生 · 合并观察", "Pathways across academic profiles": "不同学业背景的发展路径", "THE BIG PICTURE": "整体图景", "One foundation, many directions": "同一基础，多种方向", "Across the profile layers, Statistics students move into doctoral study, specialised Master’s programmes and modern data work.": "不同学业背景的统计学学生，都能够走向博士、专业硕士以及现代数据工作。", "Doctoral": "博士", "Master’s": "硕士", "Industry": "行业", "Individual outcomes vary, and a major is a foundation — not an admissions or employment guarantee.": "个人结果各不相同；专业是发展的基础，而非升学或就业保证。",
+  "FOR FINAL-YEAR STUDENTS · BUILT BY THE CLASS OF 2026": "面向毕业班同学 · 由 2026 届学生共建", "The numbers tell you where. Their stories tell you how.": "数字告诉你他们去了哪里，故事告诉你他们如何抵达。", "Your next application does not have to start from zero.": "你的下一份申请，不必从零开始。", "The CUHK-Shenzhen Graduate Handbook collects first-hand stories from recent graduates about postgraduate applications, internships, careers, exchange programmes and the decisions behind them.": "港中深飞跃手册汇集近期毕业生关于升学申请、实习求职、海外交流及其背后选择的一手经验。", "Applications are hard. Borrow a map from someone who has just finished the journey.": "申请并不容易；不妨借用一张刚走完这段路的人留下的地图。", "EXPLORE THE GRADUATE HANDBOOK": "阅读港中深飞跃手册", "Have a story to share? Contribute to the handbook": "愿意分享你的故事？为飞跃手册投稿", "An independent, student-led project by CUHK-Shenzhen graduates.": "由港中深毕业生自主发起和维护的学生项目。", "GRAD SCHOOL": "升学", "INTERNSHIP": "实习", "CAREER": "职业",
   "MAKE THE CHOICE ACCURATELY": "更准确地做出选择", "If proofs, causality and uncertainty make you curious, Statistics is not a fallback. It may be your route.": "如果证明、因果与不确定性让你感到好奇，统计学并不是退而求其次——它可能正是适合你的方向。", "Compare the required courses. Try one derivation and one small coding project. Then ask which kind of difficulty still feels worth solving.": "比较必修课程，尝试一次数学推导和一个小型编程项目，再问问自己：哪一种困难仍然值得投入？",
   "Do you want to build the answer — or decide whether it deserves trust?": "你更想构建答案，还是判断答案是否值得相信？", "Eight choices. Two ways of thinking with data. No better major in the abstract — only a clearer match for the questions you want to spend years solving.": "八次选择，两种用数据思考的方式。没有抽象意义上更好的专业，只有与你愿意长期解决的问题更匹配的方向。", "A reflection tool, not a psychological assessment.": "这是帮助思考的工具，并非心理测评。", "Route introduction": "方向测试介绍", "Change previous answer": "修改上一题", "YOUR ROUTE NOTE": "你的方向建议", "Take it again": "重新测试", "Review the field comparison ↑": "回看专业比较 ↑", "Statisticians build products too — this website was made by the Statistics major team.": "统计学家也会做产品——这个网站由统计学专业团队制作。", "School of Data Science · Why Statistics": "数据科学学院 · 为什么选择统计学"
 };
@@ -568,6 +569,46 @@ export function MajorMatch() {
           </div>
         </div>
         <p className={styles.outcomeNote}>{tx("Individual outcomes vary, and a major is a foundation — not an admissions or employment guarantee.")}</p>
+
+        <aside className={styles.handbookCard} aria-labelledby="graduate-handbook-title">
+          <div className={styles.handbookVisual} aria-hidden="true">
+            <svg viewBox="0 0 360 230">
+              <path className={styles.handbookShadow} d="M50 64 L178 79 L307 62 L314 191 L180 211 L44 190 Z" />
+              <path className={styles.handbookPage} d="M51 48 L178 67 L178 196 L48 178 Z" />
+              <path className={styles.handbookPage} d="M178 67 L307 47 L310 178 L178 196 Z" />
+              <path className={styles.handbookFold} d="M178 67 L178 196" />
+              <path className={styles.handbookRoute} d="M73 145 C98 95 139 153 174 115 C213 72 244 142 289 88" />
+              <circle className={styles.handbookStop} cx="74" cy="145" r="7" /><circle className={styles.handbookStop} cx="176" cy="114" r="7" /><circle className={styles.handbookStop} cx="289" cy="88" r="7" />
+              <g className={styles.handbookFox}>
+                <path d="M104 56 L116 25 L137 50 L161 26 L171 60 Q165 93 136 94 Q108 91 104 56 Z" />
+                <path d="M116 45 L120 34 L128 49 M151 49 L159 35 L162 52" />
+                <circle cx="125" cy="61" r="4" /><circle cx="151" cy="61" r="4" />
+                <path d="M132 73 Q138 79 145 73" />
+              </g>
+              <g className={styles.handbookSigns}>
+                <rect x="53" y="157" width="79" height="25" rx="3" /><text x="92.5" y="173">{tx("GRAD SCHOOL")}</text>
+                <rect x="139" y="91" width="78" height="25" rx="3" /><text x="178" y="107">{tx("INTERNSHIP")}</text>
+                <rect x="245" y="57" width="67" height="25" rx="3" /><text x="278.5" y="73">{tx("CAREER")}</text>
+              </g>
+            </svg>
+            <span>{tx("Applications are hard. Borrow a map from someone who has just finished the journey.")}</span>
+          </div>
+          <div className={styles.handbookCopy}>
+            <p className={styles.kicker}>{tx("FOR FINAL-YEAR STUDENTS · BUILT BY THE CLASS OF 2026")}</p>
+            <h3 id="graduate-handbook-title">{tx("The numbers tell you where. Their stories tell you how.")}</h3>
+            <p><strong>{tx("Your next application does not have to start from zero.")}</strong> {tx("The CUHK-Shenzhen Graduate Handbook collects first-hand stories from recent graduates about postgraduate applications, internships, careers, exchange programmes and the decisions behind them.")}</p>
+            <div className={styles.handbookActions}>
+              <a href="https://cuhkszfysc.github.io/" target="_blank" rel="noreferrer">
+                {tx("EXPLORE THE GRADUATE HANDBOOK")} <span>↗</span>
+              </a>
+              <a className={styles.handbookContribute} href="https://cuhkszfysc.github.io/docs/contribute" target="_blank" rel="noreferrer">
+                {tx("Have a story to share? Contribute to the handbook")} <span>↗</span>
+              </a>
+            </div>
+            <code>cuhkszfysc.github.io</code>
+            <small>{tx("An independent, student-led project by CUHK-Shenzhen graduates.")}</small>
+          </div>
+        </aside>
       </section>
 
       <section className={styles.close}>
